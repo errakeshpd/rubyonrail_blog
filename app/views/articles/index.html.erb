@@ -1,0 +1,18 @@
+<h1>Listing Articles</h1>
+<%= link_to 'new article', new_article_path %>
+<table style="border:1px solid grey">
+    <tr>
+        <th>Number</th>
+        <th>Title</th>
+            <th>Text</th>
+            <th>created</th>
+    </tr>
+    <% @articles.each do |article| %>
+        <tr >
+             <td style="border:1px solid grey"><%= article.id %></td>
+             <td style="border:1px solid grey"><%= article.title %></td>
+            <td style="border:1px solid grey"><%= article.text %></td>
+            <td style="border:1px solid grey"><%= article.created_at %></td>
+        </tr>
+    <% end %>
+</table>

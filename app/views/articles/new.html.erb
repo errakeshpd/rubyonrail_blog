@@ -1,7 +1,7 @@
-<%= form_for :article do |f| %>
+<%= form_for :article, url: articles_path do |f| %>
     <p>
-        <%= f.label :tittle %><br/>
-        <%= f.text_field :tittle %>
+        <%= f.label :title %><br/>
+        <%= f.text_field :title %>
     </p>
     <p>
         <%= f.label :text %><br/>
